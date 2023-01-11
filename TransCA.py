@@ -386,29 +386,9 @@ class TransNet:
         return Pi
 
 
-############################ 用户界面 ###############################
-
-
-class GUI:
-    filename1 = ""  # 输入文件名 str
-    filename2 = ""  # 输出文件名 str
-    parameters_network = []
-
-    def __init__(self):
-        self.root = tk.Tk()
-        self.root.title("TransCA v1.1")
-        self.root.geometry("500x150+630+200")  # 长x宽+x*y
-
-        # VOT [0:7] COI [7:11] 共乘时间费 [11:15] 共乘里程费 [15:19] 浮动定价参数 [19:23] 固定费 [23] 使用费 [24] 公交里程费 [25]
-        self.parameters_network = [1, 0.8, 0.8, 0.4, 0.3, 0.05, 0.03, 0.3, 0.3, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 0.2, 0.2,
-                                   0.2, 0.2, 0.5, 0.5, 0.3, 0.3, 3, 5, 0.4]
-
-
-
-
 if __name__ == '__main__':
 
-    filename1 = r"../data/SiouxFall网络信息.xlsx"
+    filename1 = r"../data/SiouxFalls_Network.xlsx"
     filename2 = r"../results/save.xlsx"
     # VOT [0:7] COI [7:11] 共乘时间费 [11:15] 共乘里程费 [15:19] 浮动定价参数 [19:23] 固定费 [23] 使用费 [24] 公交里程费 [25]
     parameters_network = [1, 0.8, 0.8, 0.4, 0.3, 0.05, 0.03, 0.3, 0.3, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 0.2, 0.2,
