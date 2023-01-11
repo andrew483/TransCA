@@ -22,7 +22,7 @@ TransCA is programmed in **python3.8**.
 
 We use an urban transportation network of Sioux-Falls City, South Dakota, which has 24 nodes, 76 links, and 528 OD pairs, as an example to further demonstrate the software of TransCA.
 
-Test data is showed in [SiouxFall网络信息.xlsx](./data/SiouxFall网络信息.xlsx).
+Test data is showed in [SiouxFalls_Network.xlsx](./data/SiouxFalls_Network.xlsx).
 
 
 ## 4. Contact us 
